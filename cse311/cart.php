@@ -15,7 +15,7 @@
                 <td>Image</td>
                 <td>Product</td>
                 <td>Price</td>
-<!--                <td>Quantity</td>-->
+                <td>Quantity</td>
                 <td>Total</td>
             </tr>
             </thead>
@@ -41,6 +41,7 @@
                 $productPrice = $row["price"];
                 $productImage = $row["image"];
                 $productTotal = $row["total"];
+                $productQuantity = $row["quantity"];
             ?>
 
                 <tr>
@@ -48,7 +49,7 @@
                     <td><img src="./images/<?php echo $productImage ?>" alt=""></td>
                     <td><h5><?php echo $productName ?></h5></td>
                     <td><?php echo $productPrice ?></td>
-                    <!--                <td><input class="w-25 pl-1" value="1" type ="number"></td>-->
+                    <td><input class="w-25 pl-1" value="<?php echo $productQuantity ?>" type ="number"></td>
                     <td><h5><?php echo $productTotal ?>BDT</h5></td>
                 </tr>
 
