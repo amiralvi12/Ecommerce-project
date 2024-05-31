@@ -1,0 +1,38 @@
+Problem @ AD.html file starting at 1171 number line
+
+<div class="create">
+                            <h2 style="font-size: medium;text-align: center;">Registration Form</h2>
+            
+                            <form>
+                                <label for="firstname">First Name:</label><br>
+                                <input type="text" id="fname" name="firstname" size="55px" style="height: 35px;margin-top:3px;margin-bottom: 12px;border-width:1px;border-style:groove;border-color: #ccc"><br>
+                                
+                                <label for="lastname">Last Name:</label><br>
+                                <input type="text" id="lname" name="lastname" size="55px" style="height: 35px;margin-top:3px;margin-bottom: 12px;border-width:1px;border-style:groove;border-color: #ccc"><br>
+                
+                                <label for="Gender">Gender:</label><br>                
+                                <select name="Gender" id="Gender" style="tab-size: 4; width: 400px;height: 39px;margin-top:3px;margin-bottom: 12px;border-width:1px;border-style:groove;border-color: #ccc;font-size: small">
+                                    <option value="" disabled selected style="display: none;" > Select Gender </option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                    </select><br>
+                
+                                <label for="DOB">Date of Birth:</label><br>
+                                <input type="date"  size="39px" style="height: 39px;width: 400px;margin-top:3px;margin-bottom: 12px;border-width:1px;border-style:groove;border-color: #ccc;font-size: small;">
+                
+                                <label for="email">Email:</label><br>
+                                <input type="email" id="email" name="email" size="55px" style="height: 35px;margin-top:3px;margin-bottom: 12px;border-width:1px;border-style:groove;border-color: #ccc"><br>
+                                    
+                                <label for="Password">Password:</label><br>
+                                <input type="password" id="password" name="Password" size="55px" style="height: 35px;margin-top:3px;margin-bottom: 12px;border-width:1px;border-style:groove;border-color: #ccc"><br>
+                
+                                <label for="Retypepassword">Retype Password:</label><br>
+                                <input type="Password" id="Retypepassword" name="Retypepassword" size="55px" style="height: 35px;margin-top:3px;margin-bottom: 12px;border-width:1px;border-style:groove;border-color: #ccc"><br>
+                
+                                <button class="button">Register</button> 
+                                <div class="link">
+                                    <label for="register">Already have an account?</label>
+                                    <a href="#" class="a">Login</a>    
+                                </div>
+                            </form>
