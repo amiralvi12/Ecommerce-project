@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="index.php"><img style="width: 226px; height: 90px;" src="./images/logo.png" alt=""></a>
+        <a class="navbar-brand" href="index.php"><img style="width: 226px; height: 50px;" src="./images/logo.png" alt=""></a>
         <button
             data-mdb-collapse-init
             class="navbar-toggler"
@@ -41,6 +41,12 @@
                                     Register
                                 </a>
                             </li>
+                            <li>
+                                <a class="dropdown-item dashboard display" href="user-dashboard.php">
+                                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                                    Dashboard
+                                </a>
+                            </li>
                             <li class="logout display">
                                 <a class="dropdown-item" href="index.php?logout">
                                     <i class="fa fa-sign-out" aria-hidden="true"></i>
@@ -56,17 +62,31 @@
                             Categories
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Mobiles</a></li>
-                            <li><a class="dropdown-item" href="#">Consoles</a></li>
-                            <li><a class="dropdown-item" href="#">Laptops</a></li>
+                            <li><a class="dropdown-item" href="category.php?category=CPU">CPU</a></li>
+                            <li><a class="dropdown-item" href="category.php?category=CPU Cooler">CPU Cooler</a></li>
+                            <li><a class="dropdown-item" href="category.php?category=MoBo">MoBo</a></li>
+                            <li><a class="dropdown-item" href="category.php?category=GPU">GPU</a></li>
+                            <li><a class="dropdown-item" href="category.php?category=RAM">RAM</a></li>
+                            <li><a class="dropdown-item" href="category.php?category=PSU">PSU</a></li>
+                            <li><a class="dropdown-item" href="category.php?category=HDD">HDD</a></li>
+                            <li><a class="dropdown-item" href="category.php?category=SSD">SSD</a></li>
+                            <li><a class="dropdown-item" href="category.php?category=Case">Case</a></li>
+                            <li><a class="dropdown-item" href="category.php?category=Casing Cooler">Casing Cooler</a></li>
                         </ul>
                     </div>
                 </li>
-                <li class="nav-item cart display" style="margin-left: 3px">
+                <li class="nav-item cart-nav display" style="margin-left: 3px">
                     <a href="cart.php" class="btn btn-warning position-relative">
                         <i class="fa fa-cart-plus" aria-hidden="true"></i> Cart
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill badge-danger">
-                            0
+                            <?php
+                                if(isset($_SESSION['count'])) {
+                                    echo $_SESSION['count'];
+                                }
+                                else {
+                                    echo 0;
+                                }
+                            ?>
                             <span class="visually-hidden">unread messages</span>
                         </span>
                     </a>
